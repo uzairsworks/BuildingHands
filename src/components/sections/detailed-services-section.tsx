@@ -2,8 +2,11 @@ import { CheckCircle } from 'lucide-react';
 import { detailedServices } from '@/lib/data';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
-function ServiceBlock({ id, title, description, items, cta }) {
+function ServiceBlock({ id, title, description, items, cta, imageId }) {
+  const serviceImage = PlaceHolderImages.find(img => img.id === imageId);
   return (
     <div id={id} className="py-12">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
@@ -22,11 +25,16 @@ function ServiceBlock({ id, title, description, items, cta }) {
             <Link href="#contact">{cta}</Link>
           </Button>
         </div>
-        <div className="lg:order-1 bg-primary/5 rounded-lg p-8 h-full">
-          {/* Placeholder for image or illustration */}
-          <div className="bg-primary/10 rounded-md w-full h-64 lg:h-full flex items-center justify-center">
-            <p className="text-muted-foreground">Illustration Area</p>
-          </div>
+        <div className="lg:order-1 relative min-h-[300px] lg:min-h-[400px] rounded-lg overflow-hidden shadow-lg">
+          {serviceImage && (
+            <Image
+              src={serviceImage.imageUrl}
+              alt={serviceImage.description}
+              fill
+              className="object-cover"
+              data-ai-hint={serviceImage.imageHint}
+            />
+          )}
         </div>
       </div>
     </div>
@@ -43,6 +51,7 @@ export function DetailedServicesSection() {
           description={detailedServices.plumbing.description}
           items={detailedServices.plumbing.items}
           cta={detailedServices.plumbing.cta}
+          imageId="service-plumbing"
         />
         <ServiceBlock 
           id="services-electrical"
@@ -50,6 +59,7 @@ export function DetailedServicesSection() {
           description={detailedServices.electrical.description}
           items={detailedServices.electrical.items}
           cta={detailedServices.electrical.cta}
+          imageId="service-electrical"
         />
         <ServiceBlock 
           id="services-security"
@@ -57,6 +67,7 @@ export function DetailedServicesSection() {
           description={detailedServices.security.description}
           items={detailedServices.security.items}
           cta={detailedServices.security.cta}
+          imageId="service-security"
         />
       </div>
     </section>
