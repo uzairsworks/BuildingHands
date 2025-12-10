@@ -26,7 +26,6 @@ export const navLinks = [
   { title: 'Services', href: '#services' },
   { title: 'Why Us', href: '#why-us' },
   { title: 'Projects', href: '#projects' },
-  { title: 'Pricing', href: '#pricing' },
   { title: 'Testimonials', href: '#testimonials' },
   { title: 'FAQ', href: '#faq' },
   { title: 'Contact', href: '#contact' },
