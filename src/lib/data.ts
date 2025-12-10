@@ -272,7 +272,7 @@ export const footerLinks = {
   ],
   socials: [
     { icon: MessageCircle, href: `https://wa.me/${siteConfig.phone.replace(/[^0-9]/g, '')}` },
-    { icon: Facebook, href: '#' },
-    { icon: Instagram, href: '#' },
+    { icon: Facebook, href: 'https://facebook.com' },
+    { icon: Instagram, href: 'https://instagram.com' },
   ]
 };
