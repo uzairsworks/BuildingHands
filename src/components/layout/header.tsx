@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { siteConfig, navLinks } from '@/lib/data';
@@ -16,7 +16,18 @@ import {
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   const activeId = useScrollSpy(navLinks.map(link => link.href.substring(1)), { offset: 100 });
+
+  const getLinkClass = (href: string) => {
+    if (!isMounted) return "text-foreground/60";
+    return (href === `#${activeId}` || (activeId === null && href === '#home')) ? "text-accent" : "text-foreground/60";
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -32,7 +43,7 @@ export function Header() {
               href={link.href}
               className={cn(
                 "transition-colors hover:text-accent",
-                (link.href === `#${activeId}` || (activeId === null && link.href === '#home')) ? "text-accent" : "text-foreground/60"
+                getLinkClass(link.href)
               )}
             >
               {link.title}
@@ -71,7 +82,7 @@ export function Header() {
                         href={link.href}
                         className={cn(
                           "text-lg font-medium transition-colors hover:text-accent",
-                           (link.href === `#${activeId}` || (activeId === null && link.href === '#home')) ? "text-accent" : "text-foreground"
+                           getLinkClass(link.href) === "text-accent" ? "text-accent" : "text-foreground"
                         )}
                         onClick={() => setIsMenuOpen(false)}
                       >
