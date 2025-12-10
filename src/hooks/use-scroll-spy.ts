@@ -4,8 +4,15 @@ import { useState, useEffect } from 'react';
 
 export function useScrollSpy(ids: string[], options?: { offset?: number }) {
   const [activeId, setActiveId] = useState<string | null>(null);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isMounted) return;
+
     const listener = () => {
       const scrollY = window.scrollY;
       const offset = options?.offset ?? 150;
@@ -36,7 +43,7 @@ export function useScrollSpy(ids: string[], options?: { offset?: number }) {
       window.removeEventListener('scroll', listener);
       window.removeEventListener('resize', listener);
     };
-  }, [ids, options?.offset]);
+  }, [ids, options?.offset, isMounted]);
 
   return activeId;
 }

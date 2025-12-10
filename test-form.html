@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web3Forms Test</title>
+</head>
+<body>
+    <h1>Test Web3Forms</h1>
+    <form id="testForm">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('testForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            formData.append("access_key", "81576bb2-eba6-4325-b222-3aa30d14dd6f");
+            
+            console.log('Sending test form...');
+            
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
+            
+            const data = await response.json();
+            console.log('Response:', data);
+            document.getElementById('result').innerHTML = 
+                data.success ? 
+                    '<p style="color: green;">Success! Check your email.</p>' : 
+                    '<p style="color: red;">Error: ' + JSON.stringify(data) + '</p>';
+        });
+    </script>
+</body>
+</html>
+
