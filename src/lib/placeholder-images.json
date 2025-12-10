@@ -1,3 +1,52 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "A professional technician working on an electrical panel.",
+      "imageUrl": "https://images.unsplash.com/photo-1744302570694-3f8949445c2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0ZWNobmljaWFuJTIwdG9vbHN8ZW58MHx8fHwxNzY1MzQ4NzUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "technician tools"
+    },
+    {
+      "id": "project-1",
+      "description": "Complete apartment rewiring project.",
+      "imageUrl": "https://images.unsplash.com/photo-1607631697491-61972eecf928?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZWxlY3RyaWNhbCUyMHdpcmluZ3xlbnwwfHx8fDE3NjUyNzAzMDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "electrical wiring"
+    },
+    {
+      "id": "project-2",
+      "description": "Office CCTV camera setup.",
+      "imageUrl": "https://images.unsplash.com/photo-1549109926-58f039549485?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzZWN1cml0eSUyMGNhbWVyYXxlbnwwfHx8fDE3NjUzMzQ3NDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "security camera"
+    },
+    {
+      "id": "project-3",
+      "description": "Bathroom plumbing and fitting renovation.",
+      "imageUrl": "https://images.unsplash.com/photo-1611236544238-2d272eff2cd6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwbHVtYmluZyUyMHBpcGVzfGVufDB8fHx8MTc2NTI3NDc1Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "plumbing pipes"
+    },
+    {
+      "id": "project-4",
+      "description": "Commercial space lighting installation.",
+      "imageUrl": "https://images.unsplash.com/photo-1578991624414-276ef23a534f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxvZmZpY2UlMjBsaWdodGluZ3xlbnwwfHx8fDE3NjUyNjIyNTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "office lighting"
+    },
+    {
+      "id": "project-5",
+      "description": "Geyser installation and repair.",
+      "imageUrl": "https://images.unsplash.com/photo-1714894691666-e8bb020c781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3YXRlciUyMGhlYXRlcnxlbnwwfHx8fDE3NjUzMDAxMjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "water heater"
+    },
+    {
+      "id": "project-6",
+      "description": "Home security system integration.",
+      "imageUrl": "https://images.unsplash.com/photo-1514803400321-3ca29fc47334?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzbWFydCUyMGhvbWV8ZW58MHx8fHwxNzY1Mjk1NzEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smart home"
+    },
+    {
+      "id": "why-us-image",
+      "description": "A team of smiling, confident technicians.",
+      "imageUrl": "https://images.unsplash.com/photo-1718209962486-4f91ce71886b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0ZWFtJTIwd29ya2Vyc3xlbnwwfHx8fDE3NjUzNDg3NTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "team workers"
+    }
+  ]
 }
