@@ -1,4 +1,4 @@
-import { Phone, Mail, Clock, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 import { siteConfig } from '@/lib/data';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ContactForm } from '@/components/contact-form';
@@ -43,13 +43,6 @@ export function ContactSection() {
                 <div suppressHydrationWarning>
                   <h4 className="font-semibold">Email</h4>
                   <a href={`mailto:${siteConfig.email}`} className="text-muted-foreground hover:text-accent">{siteConfig.email}</a>
-                </div>
-              </div>
-              <div className="flex items-center" suppressHydrationWarning>
-                <Clock className="h-6 w-6 mr-4 text-accent" />
-                <div suppressHydrationWarning>
-                  <h4 className="font-semibold">Service Hours</h4>
-                  <p className="text-muted-foreground">{siteConfig.serviceHours}</p>
                 </div>
               </div>
               <div className="flex items-center" suppressHydrationWarning>

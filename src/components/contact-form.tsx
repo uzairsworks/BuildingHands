@@ -93,18 +93,18 @@ export function ContactForm() {
       console.log('Web3Forms response:', data);
 
       if (data.success) {
-        toast({
-          title: 'Inquiry Sent!',
-          description: "Thank you for reaching out. We'll be in touch shortly.",
-        });
-        form.reset();
-      } else {
+      toast({
+        title: 'Inquiry Sent!',
+        description: "Thank you for reaching out. We'll be in touch shortly.",
+      });
+      form.reset();
+    } else {
         console.error('Web3Forms error:', data);
-        toast({
-          title: 'Something went wrong.',
+      toast({
+        title: 'Something went wrong.',
           description: data.message || `Error: ${JSON.stringify(data)}`,
-          variant: 'destructive',
-        });
+        variant: 'destructive',
+      });
       }
     } catch (error) {
       console.error('Form submission error:', error);
