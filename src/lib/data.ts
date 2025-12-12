@@ -274,9 +274,9 @@ export const footerLinks = {
     { title: 'Contact', href: '#contact' },
   ],
   socials: [
-    { icon: MessageCircle, href: `https://wa.me/971585726695` },
+    { icon: MessageCircle, href: `https://wa.me/971527059590` },
     { icon: Facebook, href: 'https://facebook.com' },
     { icon: Instagram, href: 'https://instagram.com' },
   ],
-  whatsappNumbers: ['+971 52 705 9590']
+  whatsappNumbers: ['+971527059590']
 };
