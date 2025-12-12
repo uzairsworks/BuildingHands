@@ -6,7 +6,7 @@ import { ContactForm } from '@/components/contact-form';
 export function ContactSection() {
   return (
     <section id="contact" className="py-16 lg:py-24 bg-card">
-      <div className="container max-w-7xl mx-auto px-4">
+      <div className="container max-w-7xl mx-auto px-4" suppressHydrationWarning>
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-headline font-bold text-primary">Book a Service</h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
@@ -22,36 +22,39 @@ export function ContactSection() {
               <ContactForm />
             </CardContent>
           </Card>
-          <div className="space-y-6">
+          <div className="space-y-6" suppressHydrationWarning>
             <h3 className="text-2xl font-bold font-headline">Direct Contact</h3>
             <p className="text-muted-foreground">
               For urgent issues or immediate assistance, please don't hesitate to call or message us.
             </p>
-            <div className="space-y-4">
-              <div className="flex items-center">
+            <div className="space-y-4" suppressHydrationWarning>
+              <div className="flex items-center" suppressHydrationWarning>
                 <Phone className="h-6 w-6 mr-4 text-accent" />
-                <div>
+                <div suppressHydrationWarning>
                   <h4 className="font-semibold">Phone & WhatsApp</h4>
-                  <a href={`tel:${siteConfig.phone}`} className="text-muted-foreground hover:text-accent">{siteConfig.phone}</a>
+                  <div className="space-y-1" suppressHydrationWarning>
+                    <a href={`tel:${siteConfig.phone}`} className="block text-muted-foreground hover:text-accent">{siteConfig.phone}</a>
+                    <a href={`tel:${siteConfig.phone2}`} className="block text-muted-foreground hover:text-accent">{siteConfig.phone2}</a>
+                  </div>
                 </div>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center" suppressHydrationWarning>
                 <Mail className="h-6 w-6 mr-4 text-accent" />
-                <div>
+                <div suppressHydrationWarning>
                   <h4 className="font-semibold">Email</h4>
                   <a href={`mailto:${siteConfig.email}`} className="text-muted-foreground hover:text-accent">{siteConfig.email}</a>
                 </div>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center" suppressHydrationWarning>
                 <Clock className="h-6 w-6 mr-4 text-accent" />
-                <div>
+                <div suppressHydrationWarning>
                   <h4 className="font-semibold">Service Hours</h4>
                   <p className="text-muted-foreground">{siteConfig.serviceHours}</p>
                 </div>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center" suppressHydrationWarning>
                 <MapPin className="h-6 w-6 mr-4 text-accent" />
-                <div>
+                <div suppressHydrationWarning>
                   <h4 className="font-semibold">Service Area</h4>
                   <p className="text-muted-foreground">{siteConfig.address}</p>
                 </div>

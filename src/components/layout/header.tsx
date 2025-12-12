@@ -11,7 +11,8 @@ import {
   Sheet,
   SheetContent,
   SheetTrigger,
-  SheetClose
+  SheetClose,
+  SheetTitle
 } from "@/components/ui/sheet"
 
 export function Header() {
@@ -53,7 +54,7 @@ export function Header() {
 
         <div className="hidden md:flex items-center space-x-4">
           <Button asChild variant="ghost">
-            <a href={`tel:${siteConfig.phone}`}>{siteConfig.phone}</a>
+            <a href={`tel:${siteConfig.phone}`}>Call Us</a>
           </Button>
           <Button asChild className="bg-accent hover:bg-accent/90 text-accent-foreground">
              <Link href="#contact">Get a Free Quote</Link>
@@ -69,6 +70,7 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left">
+              <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
               <div className="flex flex-col p-6">
                 <div className="mb-8">
                   <Link href="#home" className="text-2xl font-bold font-headline text-primary" onClick={() => setIsMenuOpen(false)}>
@@ -96,7 +98,10 @@ export function Header() {
                     <Link href="#contact" onClick={() => setIsMenuOpen(false)}>Get a Free Quote</Link>
                   </Button>
                   <Button asChild variant="outline" className="w-full mt-4">
-                    <a href={`tel:${siteConfig.phone}`}>{siteConfig.phone}</a>
+                    <a href={`tel:${siteConfig.phone}`}>Call {siteConfig.phone}</a>
+                  </Button>
+                  <Button asChild variant="outline" className="w-full mt-2">
+                    <a href={`tel:${siteConfig.phone2}`}>Call {siteConfig.phone2}</a>
                   </Button>
                 </div>
               </div>

@@ -14,7 +14,9 @@ import {
 
 export const siteConfig = {
   companyName: 'Building Hands',
-  phone: '+971 50 123 4567',
+  phone: '+971 58 572 6695',
+  phone2: '+971 50 842 7927',
+  phones: ['+971 58 572 6695', '+971 50 842 7927'],
   email: 'info@buildinghands.ae',
   address: 'Dubai, UAE',
   serviceHours: 'Mon-Sat, 9:00 AM - 6:00 PM',
@@ -270,7 +272,7 @@ export const footerLinks = {
     { title: 'Contact', href: '#contact' },
   ],
   socials: [
-    { icon: MessageCircle, href: `https://wa.me/${siteConfig.phone.replace(/[^0-9]/g, '')}` },
+    { icon: MessageCircle, href: `https://wa.me/971585726695` },
     { icon: Facebook, href: 'https://facebook.com' },
     { icon: Instagram, href: 'https://instagram.com' },
   ]

@@ -7,7 +7,7 @@ export function Footer() {
 
   return (
     <footer className="bg-primary/5 border-t">
-      <div className="container max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
+      <div className="container max-w-7xl py-12 px-4 sm:px-6 lg:px-8" suppressHydrationWarning>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="space-y-4">
             <Link href="#home" className="text-2xl font-bold font-headline text-primary">
@@ -31,8 +31,9 @@ export function Footer() {
             <div className="md:justify-self-center">
               <h3 className="text-sm font-semibold text-foreground tracking-wider uppercase">Contact Us</h3>
               <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-                <li>{siteConfig.phone}</li>
-                <li>{siteConfig.email}</li>
+                <li><a href={`tel:${siteConfig.phone}`} className="hover:text-accent">{siteConfig.phone}</a></li>
+                <li><a href={`tel:${siteConfig.phone2}`} className="hover:text-accent">{siteConfig.phone2}</a></li>
+                <li><a href={`mailto:${siteConfig.email}`} className="hover:text-accent">{siteConfig.email}</a></li>
                 <li>{siteConfig.address}</li>
                 <li className="flex space-x-2 pt-2">
                   {footerLinks.socials.map((social) => (

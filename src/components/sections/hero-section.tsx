@@ -7,11 +7,11 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function HeroSection() {
   const heroImage = PlaceHolderImages.find(img => img.id === 'hero-background');
-  const whatsappUrl = `https://wa.me/${siteConfig.phone.replace(/[^0-9]/g, '')}`;
+  const whatsappUrl = `https://wa.me/971585726695`;
 
   return (
     <section id="home" className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center text-white">
-      <div className="absolute inset-0">
+      <div className="absolute inset-0" suppressHydrationWarning>
         {heroImage && (
           <Image
             src={heroImage.imageUrl}

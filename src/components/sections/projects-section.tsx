@@ -19,7 +19,7 @@ export function ProjectsSection() {
 
   return (
     <section id="projects" className="py-16 lg:py-24 bg-card">
-      <div className="container max-w-7xl mx-auto px-4">
+      <div className="container max-w-7xl mx-auto px-4" suppressHydrationWarning>
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-headline font-bold text-primary">Recent Work</h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">

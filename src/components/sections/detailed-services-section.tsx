@@ -44,7 +44,7 @@ function ServiceBlock({ id, title, description, items, cta, imageId }) {
 export function DetailedServicesSection() {
   return (
     <section className="bg-card">
-      <div className="container max-w-7xl mx-auto px-4 divide-y divide-border">
+      <div className="container max-w-7xl mx-auto px-4 divide-y divide-border" suppressHydrationWarning>
         <ServiceBlock 
           id="services-plumbing"
           title={detailedServices.plumbing.title}
