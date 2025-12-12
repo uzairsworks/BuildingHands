@@ -18,6 +18,7 @@ export const siteConfig = {
   phoneNumber: '971585726695',
   phone2: '+971 50 842 7927',
   phoneNumber2: '971508427927',
+  whatsappNumber: '971527059590',
   phones: ['+971 58 572 6695', '+971 50 842 7927'],
   email: 'info@buildinghands.ae',
   address: 'Dubai, UAE',

@@ -7,7 +7,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function HeroSection() {
   const heroImage = PlaceHolderImages.find(img => img.id === 'hero-background');
-  const whatsappUrl = `https://wa.me/971585726695`;
+  const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber}`;
 
   return (
     <section id="home" className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center text-white">

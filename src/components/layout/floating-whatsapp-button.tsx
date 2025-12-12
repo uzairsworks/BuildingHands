@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { siteConfig } from '@/lib/data';
 
 export function FloatingWhatsAppButton() {
-  const whatsappUrl = `https://wa.me/971585726695?text=Hello%20Building%20Hands,%20I%20have%20an%20inquiry.`;
+  const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber}?text=Hello%20Building%20Hands,%20I%20have%20an%20inquiry.`;
 
   return (
     <div className="fixed bottom-6 right-6 z-50" suppressHydrationWarning>
