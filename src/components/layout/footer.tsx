@@ -31,8 +31,8 @@ export function Footer() {
             <div className="md:justify-self-center">
               <h3 className="text-sm font-semibold text-foreground tracking-wider uppercase">Contact Us</h3>
               <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-                <li><a href={`tel:${siteConfig.phone}`} className="hover:text-accent">{siteConfig.phone}</a></li>
-                <li><a href={`tel:${siteConfig.phone2}`} className="hover:text-accent">{siteConfig.phone2}</a></li>
+                <li><a href={`tel:${siteConfig.phoneNumber}`} className="hover:text-accent">{siteConfig.phone}</a></li>
+                <li><a href={`tel:${siteConfig.phoneNumber2}`} className="hover:text-accent">{siteConfig.phone2}</a></li>
                 <li><a href={`mailto:${siteConfig.email}`} className="hover:text-accent">{siteConfig.email}</a></li>
                 <li>{siteConfig.address}</li>
                 <li className="flex space-x-2 pt-2">
