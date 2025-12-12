@@ -278,5 +278,5 @@ export const footerLinks = {
     { icon: Facebook, href: 'https://facebook.com' },
     { icon: Instagram, href: 'https://instagram.com' },
   ],
-  whatsappNumbers: ['971585726695', '971508427927']
+  whatsappNumbers: ['+971 52 705 9590']
 };
