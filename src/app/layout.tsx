@@ -5,6 +5,11 @@ import { Toaster } from '@/components/ui/toaster';
 export const metadata: Metadata = {
   title: 'Building Hands | Expert Maintenance Services',
   description: 'Building Hands provides reliable home and commercial maintenance services including plumbing, electrical work, and security camera installation.',
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
 };
 
 export default function RootLayout({
