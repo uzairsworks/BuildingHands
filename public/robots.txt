@@ -1,0 +1,42 @@
+# robots.txt for https://buildinghands.ae/
+# Allow crawl of public marketing pages, block non-content technical and private paths.
+
+User-agent: *
+Allow: /
+
+# Block technical framework paths (optional; see note below)
+Disallow: /_next/
+
+# Block non-public or non-index pages (keep/remove based on your real routes)
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /auth/
+Disallow: /login/
+Disallow: /register/
+
+# Avoid indexing parameterized URLs
+Disallow: /*?*
+
+Sitemap: https://buildinghands.ae/sitemap.xml
+# robots.txt for https://buildinghands.ae/
+# Allow crawl of public marketing pages, block non-content technical and private paths.
+
+User-agent: *
+Allow: /
+
+# Block technical framework paths (optional; see note below)
+Disallow: /_next/
+
+# Block non-public or non-index pages (keep/remove based on your real routes)
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /auth/
+Disallow: /login/
+Disallow: /register/
+
+# Avoid indexing parameterized URLs
+Disallow: /*?*
+
+Sitemap: https://buildinghands.ae/sitemap.xml
